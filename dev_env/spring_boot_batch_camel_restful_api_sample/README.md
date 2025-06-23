@@ -91,11 +91,11 @@ mvn spring-boot:run
 
 ### Quick Start
 1. Access the web interface at `http://localhost:8080`
-2. Log in with default credentials of administrator:
-    - Username: admin
-    - Password: admin
-3. Or regular (read only) user (user/password)
-4  Use the web interface to:
+2. Log in with default credentials:
+   - Username: admin
+   - Password: admin
+   Or regular (read only) user (user/password)
+3. Use the web interface to:
    - View and manage users
    - Import users from CSV
    - Export users in different formats
