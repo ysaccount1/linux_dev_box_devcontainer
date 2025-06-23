@@ -10,30 +10,6 @@ The devcontainer provides a complete, consistent development environment that wo
 - **Team Consistency**: Everyone uses the same development environment
 - **Isolated Environment**: No conflicts with your host system
 
-# The project also includes a sample Spring Boot application demonstrating user management with multi-database support, REST APIs, and various data processing capabilities.
-
-## Repository Structure
-```
-.
-├── dev_env/                          # Development environment configurations
-│   ├── sprint-boot-sample/           # Main Spring Boot application
-│   │   ├── src/                      # Source code directory
-│   │   │   └── main/
-│   │   │       ├── java/            # Java source files
-│   │   │       │   └── com/example/demo/
-│   │   │       │       ├── batch/   # Batch processing configurations
-│   │   │       │       ├── camel/   # Apache Camel routes
-│   │   │       │       ├── config/  # Application configurations
-│   │   │       │       ├── controller/ # Web and REST controllers
-│   │   │       │       ├── document/  # MongoDB document models
-│   │   │       │       ├── model/   # Domain models
-│   │   │       │       ├── repository/ # Data repositories
-│   │   │       │       └── service/ # Business logic services
-│   │   │       └── resources/      # Application resources and templates
-│   │   └── pom.xml                 # Maven project configuration
-├── docs/                           # Documentation files
-└── .devcontainer/                  # Development container configuration
-```
 
 ## 🚀 Quick Start - Get Your Linux Dev Box Running
 
@@ -75,7 +51,7 @@ This is the easiest way to get a full Linux development environment on Windows:
 # Simply run this command in your terminal
 init_dev
 ```
-
+![img.png](img.png)
 **What it does:**
 - **Interactive Project Selection**: Browse available projects in `/app/dev_env` using fuzzy finder (fzf)
 - **Smart Preview**: See each project's startup script before selecting
@@ -126,6 +102,30 @@ Once your dev container is running:
 ```bash
 cd .devcontainer
 docker-compose up -d
+```
+# The project also includes a sample Spring Boot application demonstrating user management with multi-database support, REST APIs, and various data processing capabilities.
+
+## Repository Structure
+```
+.
+├── dev_env/                          # Development environment configurations
+│   ├── sprint-boot-sample/           # Main Spring Boot application
+│   │   ├── src/                      # Source code directory
+│   │   │   └── main/
+│   │   │       ├── java/            # Java source files
+│   │   │       │   └── com/example/demo/
+│   │   │       │       ├── batch/   # Batch processing configurations
+│   │   │       │       ├── camel/   # Apache Camel routes
+│   │   │       │       ├── config/  # Application configurations
+│   │   │       │       ├── controller/ # Web and REST controllers
+│   │   │       │       ├── document/  # MongoDB document models
+│   │   │       │       ├── model/   # Domain models
+│   │   │       │       ├── repository/ # Data repositories
+│   │   │       │       └── service/ # Business logic services
+│   │   │       └── resources/      # Application resources and templates
+│   │   └── pom.xml                 # Maven project configuration
+├── docs/                           # Documentation files
+└── .devcontainer/                  # Development container configuration
 ```
 
 #### Manual Installation
