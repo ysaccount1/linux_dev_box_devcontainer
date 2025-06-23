@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Attach",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": "5005"
+    },
+    {
+      "type": "bashdb",
+      "request": "launch",
+      "name": "Bash-Debug (select script from list of sh files)",
+      "cwd": "${workspaceFolder}",
+      "program": "${command:SelectScriptName}",
+      "args": []
+    },
+    {
+      "type": "bashdb",
+      "request": "launch",
+      "name": "Bash-Debug (hardcoded script name)",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/dev_env/EXT_Script_Info/src/reformatHTML_v2.1.1.sh",
+      "args": [
+        "-s",
+        "${workspaceFolder}/dev_env/EXT_Script_Info/golden_input/B000001_276.HTML",
+        "${workspaceFolder}/dev_env/EXT_Script_Info/output112112.11.txt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+digraph INFRA {
+  node [ color = "black", fillcolor = "#E6E6E6", height =1, style = "filled,bold,rounded", fontname = "Arial" ];
+  "Development Container" [ label = "Development Container
+(DevContainer)", shape =rectangle ];
+  "PostgreSQL Database" [ label = "PostgreSQL Database
+(AWS::RDS::DBInstance)", shape =cylinder, fillcolor = "#FFCFB3" ];
+  "MongoDB Database" [ label = "MongoDB Database
+(AWS::DocDB::DBCluster)", shape =cylinder, fillcolor = "#FFCFB3" ];
+  "Development Container" -> "PostgreSQL Database";
+  "Development Container" -> "MongoDB Database";
+}

@@ -1,0 +1,31 @@
+/.idea/
+/.venv/
+*.tif
+*.TIF
+*.csv
+*.xlsx
+*.pyc
+output.txt
+./src/output.txt
+output
+*/output.txt
+/dev_env/EXT_Script_Info/dependencies_checked
+/dev_env/EXT_Script_Info/Other_transactions/
+/dev_env/EXT_Script_Info/test_output/
+/dev_env/EXT_Script_Info/backup/
+/dev_env/EXT_Script_Info/golden_input_2/
+/dev_env/EXT_Script_Info/large files/z
+/dev_env/EXT_Script_Info/output.txt
+/dev_env/EXT_Script_Info/output/
+/dev_env/EXT_Script_Info/html_new_format_original/
+/dev_env/EXT_Script_Info/output1.txt
+/dev_env/EXT_Script_Info/golden_input/837I_html_input.html
+/dev_env/EXT_Script_Info/golden_input/B000001_834_20250409101855_FD8T0941_enrollment-non-compliant_mod.html
+/dev_env/EXT_Script_Info/2025-04-09 error/B000001_834_20250409101855_FD8T0941_enrollment-non-compliant.x12
+/dev_env/EXT_Script_Info/2025-04-09 error/B000001_834_20250409101855_FD8T0941_enrollment-non-compliant_mod.html
+/dev_env/EXT_Script_Info/2025-04-09 error/B000001_834_20250409101855_FD8T0941_enrollment-non-compliant_script_out.txt
+/dev_env/EXT_Script_Info/dependencies_checked
+/dev_env/EXT_Script_Info/.idea/
+/.mvn/
+/dev_env/sprint-boot-sample/.mvn/
+/dev_env/sprint-boot-sample/target/

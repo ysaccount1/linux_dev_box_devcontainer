@@ -1,0 +1,66 @@
+name: dev_env
+
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/java:17
+    volumes:
+      - ../..:/workspaces:cached
+      - ../dev_env:/app/dev_env:bind
+      - maven-cache:/home/vscode/.m2:cached
+    ports:
+      - "8080:8080"
+    environment:
+      - REDIRECT_OUTPUT=false
+    command: sleep infinity
+
+  # Using PostgreSQL instead of DB2 for ARM64 compatibility
+  postgresdb:
+    image: postgres:latest
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=testdb
+    ports:
+      - "5433:5432"
+    #docker compose --profile postgres_enabled up -d
+    profiles:
+      - postgres_enabled # This service will only start when the profile is activated
+      
+  # MongoDB service
+  mongodb:
+    image: mongo:latest
+    restart: unless-stopped
+    volumes:
+      - mongodb-data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=mongopassword
+    ports:
+      - "27017:27017"
+  db2:
+    image: ibmcom/db2
+    privileged: true
+    environment:
+      - LICENSE=accept
+      - DB2INST1_PASSWORD=password
+      - DBNAME=testdb
+      - VAR=1 # Add environment variable here for persistence
+    ports:
+      - "50000:50000"
+    volumes:
+      - db2-data:/database
+      # Add a volume for custom scripts that run on container start
+      - ./persistent-scripts:/var/custom
+    # Use the script from the mounted volume
+    # entrypoint: bash /var/custom/setup-db2.sh
+    profiles:
+      - db2_enabled # This service will only start when the profile is activated
+
+volumes:
+  postgres-data:
+  db2-data:
+  mongodb-data:
+  maven-cache:
