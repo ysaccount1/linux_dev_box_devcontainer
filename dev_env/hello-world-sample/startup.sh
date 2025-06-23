@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create Maven wrapper
-cd /app/dev_env/sprint-boot-sample
+cd /app/dev_env/hello-world-sample
 mvn package
 #Run the program without debugging
 #java -jar target/demo-0.0.1-SNAPSHOT.jar

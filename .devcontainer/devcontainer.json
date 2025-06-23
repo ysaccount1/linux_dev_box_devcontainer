@@ -21,7 +21,8 @@
         "vmware.vscode-spring-boot",
         "vscjava.vscode-spring-initializr",
         "vscjava.vscode-spring-boot-dashboard",
-        "pivotal.vscode-boot-dev-pack"
+        "pivotal.vscode-boot-dev-pack",
+        "amazonwebservices.amazon-q-vscode"
       ]
     }
   }

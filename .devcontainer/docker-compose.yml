@@ -25,9 +25,6 @@ services:
       - POSTGRES_DB=testdb
     ports:
       - "5433:5432"
-    #docker compose --profile postgres_enabled up -d
-    profiles:
-      - postgres_enabled # This service will only start when the profile is activated
       
   # MongoDB service
   mongodb:
