@@ -10,7 +10,7 @@ The devcontainer provides a complete, consistent development environment that wo
 - **Team Consistency**: Everyone uses the same development environment
 - **Isolated Environment**: No conflicts with your host system
 
-The project also includes a sample Spring Boot application demonstrating user management with multi-database support, REST APIs, and various data processing capabilities.
+# The project also includes a sample Spring Boot application demonstrating user management with multi-database support, REST APIs, and various data processing capabilities.
 
 ## Repository Structure
 ```
@@ -57,6 +57,7 @@ This is the easiest way to get a full Linux development environment on Windows:
 
 ### What You Get Out-of-the-Box
 - **Complete Linux Environment**: Ubuntu-based with zsh shell, Oh-My-Zsh, and Powerlevel10k theme
+- **Built-in Project Manager**: `init_dev` command for easy project selection and initialization
 - **Development Tools Ready**:
   - Git with GitHub integration
   - Java 17 + Maven
@@ -67,8 +68,46 @@ This is the easiest way to get a full Linux development environment on Windows:
 - **VS Code Extensions**: Pre-configured with useful development extensions
 - **No Host System Pollution**: Everything runs in an isolated container
 
+### 🎯 Built-in Project Manager - `init_dev`
+**One of the key features of this dev box is the built-in project initialization system:**
+
+```bash
+# Simply run this command in your terminal
+init_dev
+```
+
+**What it does:**
+- **Interactive Project Selection**: Browse available projects in `/app/dev_env` using fuzzy finder (fzf)
+- **Smart Preview**: See each project's startup script before selecting
+- **One-Click Initialization**: Hit ENTER to run the project's startup script
+- **Easy Customization**: Press F2 to edit or create startup scripts for any project
+- **Template Support**: Automatically creates startup scripts from templates when needed
+
+**Perfect for:**
+- Quickly switching between different development projects
+- Setting up project-specific environments (databases, services, etc.)
+- Onboarding new team members - they just run `init_dev` and pick their project
+- Managing multiple microservices or applications in one dev environment
+
 ### For Mac/Linux Users
 While this works great on Mac/Linux too, it's especially valuable for Windows users who want native Linux tooling without WSL complexity.
+
+## 🚀 Getting Started with Your First Project
+
+Once your dev container is running:
+
+1. **Open a terminal** in VS Code (Ctrl+` or Cmd+`)
+2. **Run the project manager**:
+   ```bash
+   init_dev
+   ```
+3. **Select a project** from the list (use arrow keys, then ENTER)
+4. **Start developing** - the project environment will be automatically set up!
+
+**Pro Tips:**
+- Press **F2** while selecting to edit/create startup scripts
+- Each project can have its own startup script for custom initialization
+- The sample Spring Boot project is pre-configured and ready to run
 
 ## Usage Instructions
 ### Prerequisites
