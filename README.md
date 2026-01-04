@@ -1,6 +1,6 @@
-# Generic Linux Dev Box with DevContainer - Ready-to-Use Development Environment
+# Generic Dev Box with DevContainer - Ready-to-Use Development Environment
 
-**This project creates a generic Linux development box based on devcontainer technology, with all essential development tools and setup ready out-of-the-box. Particularly useful for Windows users who want a full Linux development environment without the complexity of WSL or dual-boot setups.**
+**This project creates a generic (by default: Linux) development box based on devcontainer technology, with all essential development tools and setup ready out-of-the-box. Particularly useful for Windows users who want a full Linux development environment without the complexity of WSL or dual-boot setups.**
 
 The devcontainer provides a complete, consistent development environment that works identically across different operating systems. Simply clone, open in VS Code, and start developing with a fully configured Linux environment including zsh shell, development tools, and pre-configured settings.
 
