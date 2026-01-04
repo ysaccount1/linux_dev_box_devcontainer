@@ -85,22 +85,4 @@ Once your dev container is running:
 - Each project can have its own startup script for custom initialization
 - The sample Spring Boot project is pre-configured and ready to run
 
-## Usage Instructions
-### Prerequisites
-- JDK 17 or later
-- Maven 3.6 or later
-- PostgreSQL 13 or later
-- MongoDB 4.4 or later
-- Docker and Docker Compose (for development environment)
-
-### Installation
-
-#### Using Docker Development Environment
-1. Clone the repository
-2. Navigate to the project directory
-3. Start the development environment:
-```bash
-cd .devcontainer
-docker-compose up -d
-```
 # The project also includes a sample Spring Boot Hello world application downloaded from https://github.com/mkyong/spring-boot/tree/master/spring-boot-hello-world
